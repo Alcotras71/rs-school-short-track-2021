@@ -9,7 +9,7 @@
  *
  */
 function getEmailDomain(email) {
-  const reg = /(?:[.\w-]{0,}@){0,}/gi;
+  const reg = /.*@/gi;
   const result = email.replace(reg, '');
   return result;
 }
